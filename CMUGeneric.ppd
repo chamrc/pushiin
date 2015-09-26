@@ -1,0 +1,106 @@
+*PPD-Adobe: "4.0"
+*FormatVersion: "4.3"
+*LanguageEncoding: UTF-8
+*LanguageVersion: English
+*FileVersion: "1.0"
+*PCFileName: "CMUGeneric.ppd"
+*Manufacturer: "PostScript Printer Manufacturer"
+*Product: "(Generic PostScript Printer)"
+*PSVersion: "(2000.0) 1"
+*ModelName: "CMU Generic PPD"
+*ShortNickName: "CMU Generic PPD"
+*NickName: "CMU Generic PPD"
+*LanguageLevel: "2"
+
+*OpenUI *PageSize: PickOne
+*OrderDependency: 30 AnySetup *PageSize
+*DefaultPageSize: Letter
+*PageSize Letter/US Letter: "2 dict dup /PageSize [612 792] put dup /ImagingBBox null put setpagedevice"
+*PageSize Legal/US Legal: "2 dict dup /PageSize [612 1008] put dup /ImagingBBox null put setpagedevice"
+*PageSize Tabloid/11x17: "2 dict dup /PageSize [792 1224] put dup /ImagingBBox null put setpagedevice"
+*PageSize A4: "2 dict dup /PageSize [595 842] put dup /ImagingBBox null put setpagedevice"
+*PageSize ISOB5: "2 dict dup /PageSize [499 708] put dup /ImagingBBox null put setpagedevice"
+*PageSize LetterSmall/US Letter Small: "2 dict dup /PageSize [612 792] put dup /ImagingBBox [30 31 582 761] put setpagedevice"
+*PageSize LegalSmall/US Legal Small: "2 dict dup /PageSize [612 1008] put dup /ImagingBBox [64 54 548 954] put setpagedevice"
+*PageSize A4Small/A4 Small: "2 dict dup /PageSize [595 842] put dup /ImagingBBox [28 30 566 811] put setpagedevice"
+*CloseUI: *PageSize
+
+*DefaultImageableArea: Letter
+*ImageableArea Letter/US Letter: "16.6 18.6 595.4 773.4 "
+*ImageableArea Legal/US Legal: "18 15 594 993 "
+*ImageableArea Tabloid/11x17: "12.5 12.5 779.5 1211.5 "
+*ImageableArea A4: "16.84 16.84 578.16 825.16 "
+*ImageableArea ISOB5: "17 3 482 705 "
+*ImageableArea LetterSmall/US Letter Small: "30 31 582 761 "
+*ImageableArea LegalSmall/US Legal Small: "64 54 548 954 "
+*ImageableArea A4Small/A4 Small: "28 30 566 811 "
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 40 AnySetup *PageRegion
+*DefaultPageRegion: Letter
+*PageRegion Letter/US Letter: "2 dict dup /PageSize [612 792] put dup /ImagingBBox null put setpagedevice"
+*PageRegion Legal/US Legal: "2 dict dup /PageSize [612 1008] put dup /ImagingBBox null put setpagedevice"
+*PageRegion Tabloid/11x17: "2 dict dup /PageSize [792 1224] put dup /ImagingBBox null put setpagedevice"
+*PageRegion A4: "2 dict dup /PageSize [595 842] put dup /ImagingBBox null put setpagedevice"
+*PageRegion ISOB5: "2 dict dup /PageSize [499 708] put dup /ImagingBBox null put setpagedevice"
+*PageRegion LetterSmall/US Letter Small: "2 dict dup /PageSize [612 792] put dup /ImagingBBox [30 31 582 761] put setpagedevice"
+*PageRegion LegalSmall/US Legal Small: "2 dict dup /PageSize [612 1008] put dup /ImagingBBox [64 54 548 954] put setpagedevice"
+*PageRegion A4Small/A4 Small: "2 dict dup /PageSize [595 842] put dup /ImagingBBox [28 30 566 811] put setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultPaperDimension: Letter
+*PaperDimension Letter/US Letter: "612 792 "
+*PaperDimension Legal/US Legal: "612 1008 "
+*PaperDimension Tabloid/11x17: "792 1224 "
+*PaperDimension A4: "595 842 "
+*PaperDimension ISOB5: "499 708 "
+*PaperDimension LetterSmall/US Letter Small: "612 792 "
+*PaperDimension LegalSmall/US Legal Small: "612 1008 "
+*PaperDimension A4Small/A4 Small: "595 842 "
+
+*OpenUI *ManualFeed/Manual Feed: Boolean
+*OrderDependency: 20 AnySetup *ManualFeed
+*DefaultManualFeed: False
+*ManualFeed True: "1 dict dup /ManualFeed true put setpagedevice"
+*ManualFeed False: "1 dict dup /ManualFeed false put setpagedevice"
+*CloseUI: *ManualFeed
+
+*OpenUI *Duplex/Double-Sided Printing: PickOne
+*OrderDependency: 20 AnySetup *Duplex
+*DefaultDuplex: DuplexNoTumble
+*Duplex None/Off: "<</Duplex false>>setpagedevice"
+*Duplex DuplexNoTumble/Long Edge (Standard): "<</Duplex true/Tumble false>>setpagedevice"
+*Duplex DuplexTumble/Short Edge (Flip): "<</Duplex true/Tumble true>>setpagedevice"
+*CloseUI:       *Duplex
+
+*RequiresPageRegion All: True
+*OpenUI *InputSlot: PickOne
+*OrderDependency: 20 AnySetup *InputSlot
+*DefaultInputSlot: Upper
+*InputSlot Upper/Cassette: ""
+*CloseUI: *InputSlot
+*DefaultFont: Courier
+*Font Courier: Standard "(001.000)" Standard ROM
+*Font Courier-Bold: Standard "(001.000)" Standard ROM
+*Font Courier-BoldOblique: Standard "(001.000)" Standard ROM
+*Font Courier-Oblique: Standard "(001.000)" Standard ROM
+*Font Helvetica: Standard "(001.001)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.001)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.000)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.000)" Standard ROM
+*Font Symbol: Special "(001.001)" Special ROM
+*Font Times-Bold: Standard "(001.001)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.001)" Standard ROM
+*Font Times-Italic: Standard "(001.001)" Standard ROM
+*Font Times-Roman: Standard "(001.000)" Standard ROM
+
+*%APLANNOTATE START
+*%XML: <?xml version="1.0" encoding="UTF-8"?>
+*%XML: <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+*%XML: <plist version="1.0">
+*%XML: <dict>
+*%XML: 	<key>OriginalPPD</key>
+*%XML: 	<string>file://localhost/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Resources/English.lproj/Generic.ppd</string>
+*%XML: </dict>
+*%XML: </plist>
+*%APLANNOTATE END
