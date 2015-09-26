@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pushiin</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">Andrew ID</string>
+    <string name="print">Print</string>
+    <string name="cancel">Cancel</string>
+</resources>
