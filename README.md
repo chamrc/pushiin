@@ -10,8 +10,5 @@ An Android and IOS app that allows you to send PDF files to it, and sends it to 
 ##How I built it
 iOS and Android app sends POST request to a Node-based server, which then forwards the pdf to the appropriate printing queue.
 
-##Challenges I ran into
-This was our first foray into iOS and Android development, so we took quite alot of time figuring out the vagaries of the language.
-
 ##Built with:
 node.js, ios, android, cups, shell
