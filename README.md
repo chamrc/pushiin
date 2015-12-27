@@ -1,4 +1,4 @@
-# HackCMU 2015
+# Pushiin
 Printing from iOS and Android devices to the Andrew Printing queue has never been made easier.
 
 ##Inspiration
